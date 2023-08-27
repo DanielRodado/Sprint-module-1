@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Muse Mind | Raffle</title>
+        <link rel="stylesheet" href="../../css/styles.css">
+        <link rel="shortcut icon" href="../img/icon.png" type="image/x-icon">
+    </head>
+    <body>
+        <header>
+            <nav class="nav">
+                <ul class="nav__links">
+                    <li><a class="nav-item" href="../../index.html">Home</a></li>
+                    <li><a class="nav-item" href="./aboutUs.html">About us</a></li>
+                    <li><a class="nav-item" href="./contact.html">Contact</a></li>
+                    <li><a class="nav-item" href="./information.html">More Information</a></li>
+                    <li><a class="nav-item" href="./benefitsTips.html">Benefits and Tips</a></li>
+                    <li><a class="nav-item nav-item--mod" href="#">Raffle</a></li>
+                </ul>
+                <a href="../../index.html">
+                    <img class="nav-logo" src="../img/logo.png" alt="logo">
+                </a>
+            </nav>
+        </header>
+        <main>
+            <section class="rafle__section separation-top">
+                <h1 class="title">MUSE MIND</h1>
+                <h2 class="subtitle">
+                    You can collaborate to hold an exhibition event and
+                    participate in a raffle to win an easel
+                </h2>
+                <div class="rafle__section-container">
+                    <article class="rafle__section-container-article-map">
+                        <h3>Our location is located at:</h3>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d37398.308310233166!2d-118.26091538125755!3d34.054779817213536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c75ddc27da13%3A0xe22fdf6f254608f4!2sLos%20%C3%81ngeles%2C%20California%2C%20EE.%20UU.!5e0!3m2!1ses-419!2sco!4v1692227097615!5m2!1ses-419!2sco"
+                            width="400"
+                            height="300"
+                            style="border: 0"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                        ></iframe>
+                    </article>
+                    <form action="./show_data.html" method="get" class="rafle__section-container-form">
+                        <fieldset class="form-field">
+                            <label for="f-name">First Name</label>
+                            <input class="input-form" type="text" id="f-name" name="firt-name" required>
+                            <label for="l-name">Last Name</label>
+                            <input class="input-form" type="text" id="l-name" name="firt-name" required>
+                            <label for="themes-art">Choose Theme Art</label>
+                            <select id="themes-art" name="theme-art">
+                                <option>Surreal Art</option> 
+                                <option>Abstract Art</option>
+                                <option>Expressionism</option>
+                            </select>
+                            <label for="dates-art">Choose Date</label>
+                            <select id="dates-art" name="date-art">
+                                <option title="Surreal Art">20/08</option > 
+                                <option title="Abstract Art">21/08</option>
+                                <option title="Expressionism">22/08</option>
+                            </select>
+                        </fieldset>
+                        <fieldset class="form-field">
+                            <legend id="form-field-legend">Payment Options</legend>
+                            <fieldset class="form-payment-option">
+                                <input type="radio" name="option-of-payment" id="cash" value="cash" required>
+                                <label for="cash">Cash</label>
+                            </fieldset>
+                            <fieldset class="form-payment-option">
+                                <input type="radio" name="option-of-payment" id="credit-card" value="credit-card" required>
+                                <label for="credit-card">Credit Card</label>
+                            </fieldset>
+                            <fieldset class="form-payment-option">
+                                <input type="radio" name="option-of-payment" id="debit-card" value="debit-card" required>
+                                <label for="debit-card">Debit Card</label>
+                            </fieldset>
+                        </fieldset>
+                        <fieldset class="form-field">
+                            <label for="message">Message (Optional)</label>
+                            <textarea class="input-form" name="message-user" id="message" cols="30" rows="10"></textarea>
+                        </fieldset>
+                        <fieldset class="form-field">
+                            <fieldset>
+                                <input type="checkbox" name="accept-conditions" id="accept" value="conditions-accepted" required>
+                                <label for="accept">I accept terms and conditions</label>
+                            </fieldset>
+                            <input type="submit" value="Send" class="form-btn">
+                        </fieldset>
+                    </form>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p class="text-footer">Create by: Daniel Rodado</p>
+        </footer>
+    </body>
+</html>
